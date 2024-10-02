@@ -6,7 +6,7 @@ export default function BookItem(props) {
     const handleChangeShelf = (e) => {
         update(book, e.target.value).then(rs => {
             alert('Add book to shelf success');
-            onShelfChange && onShelfChange();
+            onShelfChange && onShelfChange(book, e.target.value);
         })
     }
     return (
@@ -22,7 +22,7 @@ export default function BookItem(props) {
             ></div>
             <div className="book-shelf-changer">
                 <select onChange={handleChangeShelf} defaultValue={shelf}>
-                <option value="none" disabled>
+                <option value="" disabled>
                     Move to...
                 </option>
                 <option value="currentlyReading">
