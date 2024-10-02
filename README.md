@@ -5,5 +5,9 @@ In the MyReads project, you'll create a bookshelf app that allows you to select 
 # How to run project
 
 To run project run following command in orders:
-```npm install```
-```npm start```
+
+## Install dependencies
+To install project dependencies. Run following command: `npm install`
+
+## Launch Project
+To run project in local. Run following command `npm start`
